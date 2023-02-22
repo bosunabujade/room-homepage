@@ -1,0 +1,148 @@
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+    width: 375px;
+}
+
+
+
+/****   HEADER  *****/
+
+header {
+    align-items: flex-start;
+    background: url(./images/mobile-image-hero-1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: wrap;
+    height: 360px;
+    justify-content: center;
+}
+
+.hamburger {
+    margin-top: 40px;
+    width: 7%;
+}
+
+.mobile-nav {
+    background-color: white;
+    position: absolute;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-nav ul li {
+    display: block;
+    text-decoration: none;
+}
+
+.mobile-nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 40px;
+    padding: 0 120px 0 100px;
+    width: 20%;
+}
+
+.buttons {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 130px;
+    top: 121px;
+    width: 30%;
+}
+
+.buttons img {
+    width: 10%;
+}
+
+div .left {
+    padding: 20px 25px 20px 10px; 
+
+}
+
+div .right {
+    padding: 20px 10px 20px 25px;
+}
+
+
+
+/******    SLIDES    ******/
+
+.slide {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 30px;
+    width: 100%;
+}
+
+p {
+    color: hsl(0, 0%, 63%);
+    font-size: 1.02rem;
+    line-height: 1.4rem;
+    
+}
+
+.shop {
+    color: hsl(0, 0%, 0%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.slide-2 {
+    display: none;
+}
+
+.slide-3 {
+    display: none;
+}
+
+/******    SLIDES    ******/
+
+.about div {
+    margin: 40px 20px;
+}
+
+section img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+
+/****   FOOTER   *****/
+
+.attribution { 
+    font-size: 14px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
