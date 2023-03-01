@@ -28,22 +28,48 @@ header {
 .mobile-nav {
     background-color: white;
     position: absolute;
+    width: 100%;
 }
 
 .mobile-nav ul {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .mobile-nav ul li {
     display: block;
+    font-weight: 600;
+    padding: 15px;
     text-decoration: none;
+    text-transform: lowercase;
 }
 
 .mobile-nav ul li a {
     color: black;
     text-decoration: none;
 }
+
+.closebtn {
+    margin-right: 35px;
+}
+
+
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top: 100px; 
+    left:0;
+    background:rgba(0,0,0,0.45);
+    opacity: 1;
+}
+
 
 .logo {
     margin-top: 40px;
@@ -53,11 +79,10 @@ header {
 
 .buttons {
     align-items: center;
-    background-color: black;
     display: flex;
     justify-content: center;
     position: relative;
-    left: 130px;
+    left: 131px;
     top: 121px;
     width: 30%;
 }
@@ -67,12 +92,14 @@ header {
 }
 
 div .left {
-    padding: 20px 25px 20px 10px; 
+    background-color: black;
+    padding: 20px 25px 20px 20px; 
 
 }
 
 div .right {
-    padding: 20px 10px 20px 25px;
+    background-color: black;
+    padding: 20px 20px 20px 25px;
 }
 
 
@@ -84,11 +111,11 @@ div .right {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
-
+    margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 0;
     margin-top: 30px;
@@ -102,7 +129,7 @@ p {
     
 }
 
-.shop {
+#shop {
     color: hsl(0, 0%, 0%);
     font-size: 1.1rem;
     font-weight: 600;
@@ -145,4 +172,147 @@ h3 {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width:1200px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1440px;
+    }
+
+    header {
+        background: url(./images/desktop-image-hero-1.jpg);
+        background-position: center;
+        background-size: cover;
+        flex-flow: row-reverse;
+        height: 505px;
+        width: 60% ;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-nav {
+        background-color: transparent;
+        position: relative;
+        right: 150px;
+        width: 50%;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+    }
+
+    #closebtn {
+        display: none;
+    }
+
+    .mobile-nav ul li a {
+        color: white;
+        display: inline-block;
+    }
+
+    .mobile-nav ul li a:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid white;
+        margin: 0 auto;
+        padding-bottom: 3px;
+        width: 0;
+    }
+
+    .mobile-nav ul li a:hover:after {
+        width: 50%;
+      }
+     
+
+    .logo {
+        padding: 0;
+        position: relative;
+        right: 200px;
+        width: 8%;
+    }
+
+    .buttons {
+        top: 426px;
+        left: 760px; 
+        width: 20%;
+    }
+
+    div .left {
+        padding: 25px 30px 25px 30px;
+    }
+
+    div .right {
+        padding: 25px 30px 25px 30px;
+    }
+
+    div .right:hover,
+    div .left:hover{
+        background-color: hsl(0, 0%, 27%);
+    }
+
+    main {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+    
+    .slide {
+        align-content: center;
+        align-items: baseline;
+        width: 35%;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+        margin: 20px 50px;
+    }
+
+    .slide p {
+        margin: 0 50px;
+        margin-bottom: 20px;
+    }
+
+    #shop {
+        margin: 0;
+        margin-left: 50px;
+        width: 40%;
+    }
+
+    #shop:hover {
+        color: hsl(0, 0%, 63%);
+        cursor: pointer;
+    }
+
+    .slide svg:hover {
+        cursor: pointer;
+        fill: hsl(0, 0%, 63%);
+    }
+
+    .about {
+        display: flex;
+        width: 100%;
+    }
+
+    .about img{
+        width: 30%;
+    }
+
+    .about div {
+        margin: 0 50px;
+        padding: 20px 0;
+    }
+
+    .about div p {
+        font-size: .95rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
 }
