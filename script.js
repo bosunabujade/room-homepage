@@ -21,45 +21,48 @@ closeBtn.addEventListener('click', () => {
 })
 
 let currentSlide = 1;
-let totalImages = 3
+let totalImages = 3;
 
 
 function whichSlide() {
-    if (currentSlide == 1) {
-        header.style.background = "url(./images/mobile-image-hero-1.jpg)"
-        slide2.style.display = "none"
-        slide3.style.display = "none"
-        slide1.style.display = "flex"
-    } if (currentSlide == 2) {
-        header.style.background = "url(./images/mobile-image-hero-2.jpg)"
-        slide1.style.display = "none"
-        slide3.style.display = "none"
-        slide2.style.display = "flex"
-    } if (currentSlide == 3) {
-        header.style.background = "url(./images/mobile-image-hero-3.jpg)"
-        slide2.style.display = "none"
-        slide1.style.display = "none"
-        slide3.style.display = "flex"
-    } if (currentSlide == 1 || body.style.width == '375px'){
-        header.style.background = "url(./images/desktop-image-hero-1.jpg)"
-        header.style.backgroundSize = "cover" 
-        slide2.style.display = "none"
-        slide3.style.display = "none"
-        slide1.style.display = "flex"
+    if (currentSlide === 1) {
+        header.style.background = "url(./images/desktop-image-hero-1.jpg)";
+        header.style.backgroundSize = "cover";
+        slide2.style.display = "none";
+        slide3.style.display = "none";
+        slide1.style.display = "flex";
+    } if (currentSlide === 2) {
+        header.style.background = "url(./images/desktop-image-hero-2.jpg)";
+        header.style.backgroundSize = "cover";
+        slide1.style.display = "none";
+        slide3.style.display = "none";
+        slide2.style.display = "flex";
+    } if (currentSlide === 3) {
+        header.style.background = "url(./images/desktop-image-hero-3.jpg)";
+        header.style.backgroundSize = "cover";
+        slide2.style.display = "none";
+        slide1.style.display = "none";
+        slide3.style.display = "flex";
+    } if (currentSlide === 1 && body.style.width == '375px') {
+        header.style.background = "url(./images/mobile-image-hero-1.jpg)";
+        header.style.backgroundSize = "cover";
+        slide2.style.display = "none";
+        slide3.style.display = "none";
+        slide1.style.display = "flex";
     }
-    if (currentSlide == 2 || body.style.width == '375px'){
-        header.style.background = "url(./images/desktop-image-hero-2.jpg)"
-        header.style.backgroundSize = "cover" 
-        slide2.style.display = "none"
-        slide3.style.display = "none"
-        slide1.style.display = "flex"
+    if (currentSlide === 2 && body.style.width == '375px'){
+        header.style.background = "url(./images/mobile-image-hero-2.jpg)";
+        header.style.backgroundSize = "cover";
+        slide2.style.display = "none";
+        slide3.style.display = "none";
+        slide1.style.display = "flex";
     }
-    if (currentSlide == 3 || body.style.width == '375px'){
-        header.style.background = "url(./images/desktop-image-hero-3.jpg)"
-        header.style.backgroundSize = "cover" 
-        slide2.style.display = "none"
-        slide3.style.display = "none"
-        slide1.style.display = "flex"
+    if (currentSlide === 3 && body.style.width == '375px'){
+        header.style.background = "url(./images/mobile-image-hero-3.jpg)";
+        header.style.backgroundSize = "cover" ;
+        slide2.style.display = "none";
+        slide3.style.display = "none";
+        slide1.style.display = "flex";
     }
 }
 
